@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, flash, redirect, url_for
 
 app = Flask(__name__)
 
@@ -50,8 +50,17 @@ def news():
     return render_template('news.html', news=united_news)
 
 
-@app.route("/contact")
+@app.route("/contact", methods=['GET', 'POST'])
 def contact():
+    if request.method == "POST":
+        name = request.form['name']
+        email = request.form['email']
+        subject = subject.form['subject']
+        message = request.form['message']
+
+        flash('Your message has been submitted successfully!')
+        return redirect(url_for('home'))
+    
     return render_template('contact.html')
 
 
