@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Manchester United hub</h1>
+            <p>Stay up to date with everything Manchester United. Get the latest news, match information,
+                results, fixtures and everythin surrounding the club.
+            </p>
+            <a href="{{ url_for('fixtures') }}" class="button">View Fixtures</a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Featured News</h2>
+        <article>
+            <h3>Manchester United prepare for new season</h3>
+            <p>Get the latest updates from the club as Man United prepare for season.</p>
+            <a href="{{ url_for('news') }}">Read More</a>
+        </article>
+    </section>
+
+    <section>
+        <h2>Latest News</h2>
+        <article>
+            <h3>Latest Manchester United transfer news</h3>
+            <p>Keep up to date with transfer rumours, reports and developments surrounding Man United</p>
+            <a href="{{ url_for('news') }}">Read More</a>
+        </article>
+
+        <article>
+            <h3>Team news ahead of opener</h3>
+            <p>Find out team news ahead of United's first game</p>
+            <a href="{{ url_for('news') }}">Read More</a>
+        </article>
+    </section>
+
+    <section class="next-match">
+        <h2>Next match</h2>
+        <p>Premier League</p>
+        <h3>Manchester United vs Chelsea</h3>
+        <p>Saturday 20th September</p>
+        <a href="{{ url_for('fixtures') }}">View fixtures</a>
+    </section>
+</main>
+
+{% endblock %}

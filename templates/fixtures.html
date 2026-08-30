@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Fixtures</h1>
+{% for fixture in fixtures %}
+    <h2>Manchester United vs {{ fixture.opponent }}</h2>
+    <p>{{ fixture.date }}</p>
+    <p>{{ fixture.stadium}}</p>
+    {% if fixture.stadium == "Old Trafford" %}
+    <p>Home game</p>
+    {% else %}
+    <p> Away game</p>
+    {% endif %}
+
+{% endfor %}
+{% endblock %}
