@@ -23,7 +23,7 @@ header {
 }
 
 header h1 {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -31,15 +31,15 @@ header h1 {
 nav a {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 25px;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
     transition: color 0.3s ease;
 }
 
-.navbar{
+.navbar {
     display: flex;
     gap: 20px;
 }
