@@ -19,7 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 5px solid #fbe122;
+    border-bottom: 3px solid #fbe122;
 }
 
 header h1 {
