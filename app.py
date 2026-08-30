@@ -17,6 +17,11 @@ united_fixtures = [
         "opponent": "Brighton",
         "date": "14th August, 2026",
         "stadium": "Amex Stadium"
+    },
+    {
+        "opponent": "West Ham",
+        "date": "21st August, 2026",
+        "stadium": "Old Trafford"
     }
 ]
 
