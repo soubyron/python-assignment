@@ -50,7 +50,7 @@ def news():
     return render_template('news.html', news=united_news)
 
 
-@app.route("/contact", methods=['GET', 'POST'])
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
         name = request.form['name']

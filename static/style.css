@@ -187,33 +187,67 @@ footer {
     color: white;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.footer-section{
+.footer-section {
     max-width: 250px;
 }
 
-.footer-bottom{
+.footer-bottom {
     text-align: center;
-    width:100%;
+    width: 100%;
     border-top: 1px solid;
     margin-top: 30px;
     padding-top: 20px;
 }
 
-.footer-section a{
+.footer-section a {
     text-decoration: none;
     color: #fbe122;
     font-weight: normal;
 }
 
-.footer-section a:hover{
+.footer-section a:hover {
     text-decoration: underline;
+}
+
+/* Fixtures Page */
+.page-heading {
+    text-align: center;
+}
+
+.fixtures {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.opponent {
+    font-size: 24px;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.time {
+    font-size: 18px;
+}
+
+.home-game {
+    font-weight: bold;
+}
+
+.away-game {
+    font-style: italic;
 }
 
 
