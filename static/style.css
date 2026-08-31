@@ -178,6 +178,45 @@ article a:hover {
     font-weight: bold;
 }
 
+footer {
+    padding: 20px 20px;
+    display: block;
+    justify-content: center;
+    background-color: #da291c;
+    border-top: 3px solid #fbe122;
+    color: white;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section{
+    max-width: 250px;
+}
+
+.footer-bottom{
+    text-align: center;
+    width:100%;
+    border-top: 1px solid;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.footer-section a{
+    text-decoration: none;
+    color: #fbe122;
+    font-weight: normal;
+}
+
+.footer-section a:hover{
+    text-decoration: underline;
+}
+
+
 @media (max-width:768px) {
     header {
         padding: 20px;
