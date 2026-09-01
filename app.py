@@ -58,7 +58,12 @@ def contact():
         subject = subject.form['subject']
         message = request.form['message']
 
-        flash('Your message has been submitted successfully!')
+    if not name or not email or not message:
+        flash("Please fill in all boxes.", "error")
+        return render_template('contact.html')
+
+    else:
+        flash('Your message has been submitted successfully!', 'success')
         return redirect(url_for('home'))
     
     return render_template('contact.html')
