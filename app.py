@@ -1,6 +1,9 @@
+import os
+
 from flask import Flask, render_template, request, flash, redirect, url_for
 
 app = Flask(__name__)
+app.secret_key = os.environ['SECRET_KEY']
 
 united_fixtures = [
     {
@@ -59,13 +62,10 @@ def contact():
         message = request.form['message']
 
     if not name or not email or not message:
-        flash("Please fill in all boxes.", "error")
-        return render_template('contact.html')
+        error = "Please fill in all boxes."
+        return render_template('contact.html', error=error)
 
-    else:
-        flash('Your message has been submitted successfully!', 'success')
-        return redirect(url_for('home'))
-    
+        return "Your message ehas been submitted successfully!"
     return render_template('contact.html')
 
 
@@ -76,4 +76,4 @@ def hello(name):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=8000)
