@@ -9,22 +9,26 @@ united_fixtures = [
     {
         "opponent": "Chelsea",
         "date": "2nd August, 2026",
-        "stadium": "Old Trafford"
+        "stadium": "Old Trafford",
+        "competition":"Premier League"
     },
        {
         "opponent": "Liverpool",
         "date": "7th August, 2026",
-        "stadium": "Anfield"
+        "stadium": "Anfield",
+        "competition":"Premier League"
        },
     {
         "opponent": "Brighton",
         "date": "14th August, 2026",
-        "stadium": "Amex Stadium"
+        "stadium": "Amex Stadium",
+        "competition":"Premier League"
     },
     {
         "opponent": "West Ham",
         "date": "21st August, 2026",
-        "stadium": "Old Trafford"
+        "stadium": "Old Trafford",
+        "competition":"Premier League"
     }
 ]
 
