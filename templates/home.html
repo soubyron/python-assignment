@@ -2,6 +2,9 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
+{% for message in get_flashed_messages() %}
+<p>{{ message }}</p>
+{% endfor %}
 
 <main>
     <section class="hero">
