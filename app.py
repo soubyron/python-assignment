@@ -60,22 +60,23 @@ def news():
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
-        name = request.form['name']
-        email = request.form['email']
-        subject = subject.form['subject']
-        message = request.form['message']
+        name = request.form.get("name", "").strip()
+        email = request.form.get("email", "").strip()
+        subject = request.form.get("subject", "").strip()
+        message = request.form.get("message", "").strip()
 
-    if not name or not email or not message:
-        error = "Please fill in all boxes."
-        return render_template('contact.html', error=error)
 
-        return "Your message ehas been submitted successfully!"
+        if not name or not email or not subject or not message:
+            flash("Please fill all boxes.", "error")
+            return redirect(url_for('home'))
+
+
+        flash("Your message has been submitted successfully!", "success")
+        return redirect(url_for('home'))
+    
     return render_template('contact.html')
+   
 
-
-@app.route("/hello/<name>")
-def hello(name):
-    return render_template('hello.html', name=name)
 
 
 

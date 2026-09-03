@@ -6,14 +6,23 @@
 <p>{{ error }}</p>
 {% endif %}
 <h1>Contact Us</h1>
-<form method="POST">
+<form method="POST" action="/contact">
     <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-    <label for="subject">Subject</label>
+    <input 
+         type="text" 
+         id="name" 
+         name="name" required>
 
-    <select id="subject" name="subject" required>
+    <label for="email">Email</label>
+    <input 
+        type="email" 
+        id="email" 
+        name="email" required>
+
+    <label for="subject">Subject</label>
+    <select 
+          id="subject" 
+          name="subject" required>
         <option value="">Choose a subject</option>
         <option value="general">General</option>
         <option value="support">Support</option>
@@ -22,7 +31,10 @@
     </select>
 
     <label for="message">Message</label>
-    <textarea id="message" name="message" rows="6" required></textarea>
+    <textarea 
+            id="message" 
+            name="message" rows="6" required>
+    </textarea>
 
     <button type="submit">Send Message</button>
 
