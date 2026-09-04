@@ -111,7 +111,7 @@ def contact():
         if errors:
             return render_template("contact.html", errors=errors, name=name, email=email, message=message)
         flash('Thank you for submitting your message!')
-        return redirect("/home")
+        return redirect(url_for('home'))
     return render_template('contact.html', errors=errors, name="", email="", message="" )
    
 
