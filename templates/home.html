@@ -42,11 +42,16 @@
     </section>
 
     <section class="next-match">
-        <h2>Next match</h2>
-        <p>Premier League</p>
-        <h3>Manchester United vs Chelsea</h3>
-        <p>2nd August, 2026</p>
+        <h2>Next Match</h2>
+        {% if next_match %}
+        <p>{{ next_match.competition }}</p>
+        <h3>Manchester United vs {{ next_match.opponent }}</h3>
+        <p>{{ next_match.date }}</p>
+        <p>{{ next_match.stadium }}</p>
         <a href="{{ url_for('fixtures') }}">View fixtures</a>
+        {% else %}
+        <p>No upcoming fixtures.</p>
+        {% endif %}
     </section>
 </main>
 

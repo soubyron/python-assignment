@@ -6,19 +6,12 @@
     <form method="POST" action="/fixtures">
         <div>
             <label for="search">Search Opponent</label>
-            <input 
-                 type="text"
-                 id="search"
-                 name="search"
-                 placeholder="e.g Liverpool">
+            <input type="text" id="search" name="search" placeholder="e.g Liverpool">
         </div>
 
         <div>
             <label for="date">Search by date</label>
-            <input
-                 type="date"
-                 id="date"
-                 name="date">
+            <input type="date" id="date" name="date">
         </div>
 
         <button type="submit">Search</button>
@@ -26,19 +19,23 @@
 </section>
 
 <section class="fixtures">
-<h1>Manchester United Fixtures</h1>
-{% for fixture in fixtures %}
-<div class="fixture-card">
-    <h2 class="opponent">Manchester United vs {{ fixture.opponent }}</h2>
-    <p class="date">{{ fixture.date }}</p>
-    <p class="time">{{ fixture.stadium}}</p>
-    <p class="competition">{{ fixture.competition }}</p>
-    {% if fixture.stadium == "Old Trafford" %}
-    <p class="home-game">Home game</p>
+    <h1>Manchester United Fixtures</h1>
+    {% if fixtures %}
+    {% for fixture in fixtures %}
+    <div class="fixture-card">
+        <h2 class="opponent">Manchester United vs {{ fixture.opponent }}</h2>
+        <p class="date">{{ fixture.date }}</p>
+        <p class="time">{{ fixture.stadium}}</p>
+        <p class="competition">{{ fixture.competition }}</p>
+        {% if fixture.stadium == "Old Trafford" %}
+        <p class="home-game">Home game</p>
+        {% else %}
+        <p class="away-game"> Away game</p>
+        {% endif %}
+    </div>
+    {% endfor %}
     {% else %}
-    <p class="away-game"> Away game</p>
+    <p>No fixtures found</p>
     {% endif %}
-</div>
 </section>
-{% endfor %}
 {% endblock %}

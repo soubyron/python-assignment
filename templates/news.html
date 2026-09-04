@@ -2,9 +2,110 @@
 {% block title %}News{% endblock %}
 
 {% block content %}
-<h1>Default content</h1>
-{% for news in news %}
-<h2>{{ news.headline }}</h2>
-<p>{{ news.league }}</p>
-{% endfor %}
+<section class="news-page">
+    <div class="news-header">
+        <h1>Manchester United News</h1>
+        <p>Stay up top date with news, updates and stories from Manchester United</p>
+    </div>
+</section>
+
+<section class="featured-news">
+    <article class="news-card">
+        <img src="{{ url_for('static', filename='images/man-united-logo.jpg') }}" alt="Manchester United logo">
+
+        <div class="featured-content">
+            <span class="news-category">Manchester United</span>
+            <h2>Manchester United all set for the new season.</h2>
+            <p>Get the latest updates from Old Trafford, including transfer news, team updates and everything happening around the club.</p>
+            <span class="news-date">4th September 2026</span>
+            <a href="#" class="read-more">Read article</a>
+        </div>
+    </article>
+</section>
+
+
+ <section class="news-grid">
+        <article class="news-card">
+            <img src="{{ url_for('static', filename='images/man-united-logo.jpg') }}" alt="Manchester United logo">
+            <div class="news-card-content">
+                <span class="news-category">Transfers</span>
+                <h3>United continue to monitor transfer targets</h3>
+                <p>The latest transfer developments from around Old Trafford.</p>
+                <div class="article-info">
+                    <span>4th September 2026</span>
+                    <a href="#">Read →</a>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="news-card">
+            <img src="{{ url_for('static', filename='images/man-united-logo.jpg') }}" alt="Manchester United logo">
+            <div class="news-card-content">
+                <span class="news-category">Club News</span>
+                <h3>Everything you need to know ahead of the weekend</h3>
+                <p> The latest team news, preparation and updates ahead of the next fixture.</p>
+                <div class="article-info">
+                    <span>2 Sep 2026</span>
+                    <a href="#">Read</a>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="news-card">
+            <img src="{{ url_for('static', filename='images/man-united-logo.jpg') }}" alt="Manchester United logo">
+            <div class="news-card-content">
+                <span class="news-category">Matchday</span>
+                <h3>United looking to make a statement in their next match</h3>
+                <p>A look ahead to Manchester United's upcoming challenge.</p>
+                <div class="article-info">
+                    <span>1 Sep 2026</span>
+                    <a href="#">Read →</a>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="news-card">
+            <img src="{{ url_for('static', filename='images/man-united-logo.jpg') }}" alt="Manchester United logo">
+            <div class="news-card-content">
+                <span class="news-category">Team News</span>
+                <h3>Latest squad updates from Carrington</h3>
+                <p>Find out the latest developments from Manchester United's training ground.</p>
+                <div class="article-info">
+                    <span>31 Aug 2026</span>
+                    <a href="#">Read →</a>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="news-card">
+           <img src="{{ url_for('static', filename='images/man-united-logo.jpg') }}" alt="Manchester United logo">
+            <div class="news-card-content">
+                <span class="news-category">Old Trafford</span>
+                <h3>Old Trafford prepares for another big night</h3>
+                <p>A closer look at the atmosphere around the Theatre of Dreams.</p>
+                <div class="article-info">
+                    <span>30 Aug 2026</span>
+                    <a href="#">Read →</a>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="news-card">
+            <img src="{{ url_for('static', filename='images/man-united-logo.jpg') }}" alt="Manchester United logo">
+            <div class="news-card-content">
+                <span class="news-category">Features</span>
+                <h3>The stories that continue to define Manchester United</h3>
+                <p>Exploring the players, moments and stories that make the club special.</p>
+                <div class="article-info">
+                    <span>29 Aug 2026</span>
+                    <a href="#">Read →</a>
+                </div>
+            </div>
+        </article>
+    </section>
 {% endblock %}
