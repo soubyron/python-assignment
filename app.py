@@ -94,12 +94,13 @@ def news():
 
 @app.route("/contact", methods=["GET", "POST"])
 def contact(): 
+    errors = []
+
     if request.method == "POST":
         name = request.form.get("name", "").strip()
         email = request.form.get("email", "").strip()
         message = request.form.get("message", "").strip()
 
-        errors = []
         if not name:
             errors.append("Please enter your name.")
         if not email:
