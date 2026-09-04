@@ -187,6 +187,10 @@ article a:hover {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
+.fixtures{
+    border-color: #da291c;
+}
+
 .fixture-search{
         max-width: 800px;
         margin: 40px auto;
