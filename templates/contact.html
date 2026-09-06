@@ -8,30 +8,21 @@
 <form method="post" class="p-3 border rounded">
     <div class="mb-4">
         <label for="name" class="form-label fw-semibold">Name</label>
-        <input type="text" 
-               name="name" 
-               id="name" 
-               class="form-control form-control-lg" 
-               placeholder="Enter your name"
-               value="{{ name }}">
+        <input type="text" name="name" id="name" class="form-control form-control-lg" placeholder="Enter your name"
+            value="{{ name }}">
     </div>
 
     <div class="mb-4">
         <label for="email" class="form-label fw-semibold">Email</label>
-        <input type="text" 
-               name="email" 
-               id="email" 
-               class="form-control form-control-lg" 
-               value="{{ email }}">
+        <input type="text" name="email" id="email" class="form-control form-control-lg" placeholder="Enter your email"
+            value="{{ email }}">
     </div>
 
     <div class="mb-4">
         <label for="message" class="form-label fw-semibold">Message</label>
-        <textarea name="message" 
-                  id="message" 
-                  class="form-control form-control-lg"
-                  rows="6">{{ message }}
-        </textarea>
+        <textarea name="message" id="message" class="form-control form-control-lg" placeholder="Type your message here"
+            rows="6">{{ message }}
+</textarea>
     </div>
 
     {% if errors %}
@@ -42,9 +33,9 @@
             {% endfor %}
         </ul>
     </div>
-            {% endif %}
+    {% endif %}
 
 
-    <button type="submit" class="btn btn-danger btn-lg w-100 fw-semibold">Send Message</button>
+    <button type="submit" class="btn btn-danger btn-lg px-5 fw-semibold">Send Message</button>
 </form>
 {% endblock %}

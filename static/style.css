@@ -179,7 +179,7 @@ article a:hover {
 }
 
 /* Fixtures page */
-.fixture-card{
+.fixture-card {
     background-color: white;
     padding: 25px;
     margin-bottom: 20px;
@@ -187,13 +187,13 @@ article a:hover {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-.fixture-search{
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 30px;
-        background: #ffffff;
-        border-radius: 14px;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+.fixture-search {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 .fixture-search h2 {
@@ -240,18 +240,18 @@ article a:hover {
 
 
 /* News page */
-.news-page{
+.news-page {
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 20px;
 }
 
-.news-header{
+.news-header {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.news-header h1{
+.news-header h1 {
     font-size: 42px;
     margin-bottom: 12px;
 }
@@ -263,11 +263,11 @@ article a:hover {
     line-height: 1.6;
 }
 
-.featured-news{
+.featured-news {
     margin-bottom: 50px;
 }
 
-.featured-card{
+.featured-card {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
     background: #f5f5f5;
@@ -393,6 +393,11 @@ article a:hover {
     text-decoration: underline;
 }
 
+/* PLACEHOLDER TEXT */
+.form-control::placeholder {
+    font-weight: lighter;
+}
+
 
 
 /* Footer */
@@ -472,7 +477,7 @@ footer {
 
 /* Mobile */
 @media(max-width:600px) {
-     .news-page {
+    .news-page {
         padding: 40px 15px;
     }
 
@@ -540,4 +545,3 @@ footer {
         padding: 35px 15px;
     }
 }
-
