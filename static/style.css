@@ -11,7 +11,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* HEADER */
 header {
     background-color: #da291c;
     color: white;
@@ -27,7 +27,7 @@ header h1 {
     font-weight: bold;
 }
 
-/* Navigation */
+/* NAVIGATION */
 nav a {
     list-style: none;
     display: flex;
@@ -48,7 +48,7 @@ nav a:hover {
     color: #fbe122;
 }
 
-/* Main */
+/* MAIN */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -67,7 +67,7 @@ section>h2 {
     padding-left: 12px;
 }
 
-/* Hero */
+/* HERO SECTION*/
 .hero {
     background-image: url('/static/images/old-trafford.jpg');
     background-size: cover;
@@ -95,7 +95,7 @@ section>h2 {
     margin-bottom: 30px;
 }
 
-/* Buttons */
+/* BUTTONS*/
 .button {
     display: inline-block;
     background-color: #da291c;
@@ -111,7 +111,7 @@ section>h2 {
     background-color: #b71c1c;
 }
 
-/* Articles on homepage */
+/* ARTICLE SECTIONS ON HOMEPAGE*/
 article {
     background-color: white;
     padding: 25px;
@@ -147,7 +147,7 @@ article a:hover {
     text-decoration: underline;
 }
 
-/* Next Match */
+/* NEXT MATCH SECTION ON HOME PAGE */
 .next-match {
     background-color: #222;
     color: white;
@@ -178,7 +178,7 @@ article a:hover {
     font-weight: bold;
 }
 
-/* Fixtures page */
+/* FIXTURES PAGE */
 .fixture-card {
     background-color: white;
     padding: 25px;
@@ -239,7 +239,7 @@ article a:hover {
 }
 
 
-/* News page */
+/* NEWS PAGE*/
 .news-page {
     max-width: 1200px;
     margin: 0 auto;
@@ -400,7 +400,7 @@ article a:hover {
 
 
 
-/* Footer */
+/* FOOTER*/
 footer {
     padding: 20px 20px;
     display: block;

@@ -58,7 +58,7 @@ def home():
     ]
 
     next_match = min(upcoming_fixtures, key=lambda fixture: fixture["date"],default=None)
-    return render_template('home.html')
+    return render_template('home.html', next_match=next_match)
 
 
 @app.route("/fixtures", methods=["GET", "POST"])
